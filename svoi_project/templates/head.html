@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <h1>ООО"Покупаем продаем"</h1>
+    </div>
+    <div class="button">
+    <form method = "post" action="{% url 'main' %}">
+        {% csrf_token %}
+         <button type="submit">Главная</button>
+    </form>
+        <form method = "post" action="{% url 'direct' %}">
+        {% csrf_token %}
+        <button type="submit">O нас</button>
+    </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel= "stylesheet" href = "{% static 'css/stylesheet.css' %}" type = "text/css">
+</head>
+<body style="background-image: url({% static 'img/фон.jpg' %})">
+    {% include "head.html" %}
+    <div>
+        <h2>Компания ,которая купит у вас все и даже немного больше</h2>
+        <hr>
+    </div>
+    <div>
+        <h2>Довольные клиенты</h2>
+    </div>
+    <div>
+        <h2>Клиент 1:<br>Инфо о клиенте</h2>
+    </div>
+    <div>
+        <h2>Клиент 2:<br>Инфо о клиенте</h2>
+    </div>
+
+
+</body>
+</html>
